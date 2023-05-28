@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -8,10 +9,10 @@ int main(int argc,char **argv) {
   int *a = new int[N];
   for(i=1;i<argc;i++)
     a[i-1]=atoi(argv[i]);
-  cout<<"using selection Input"<<"\n";
+  cout<<"using bubble Input"<<"\n";
   display(a, N);
   cout<<"\n";
-  selectionSort(a, N);
+  bubbleSort(a,N);  
   cout<<"\n"<<"final result"<<"\n";
   display(a, N);
 }
